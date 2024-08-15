@@ -31,7 +31,7 @@ def download_gh(date,hour):
 
     # Send a GET request to the URL
     response2 = requests.get(end_point, stream=True)
-    print(response2)
+    #print(response2)
     
     # Check if the request was successful
     if response2.status_code == 200:
@@ -44,7 +44,5 @@ def download_gh(date,hour):
 
 
 download_gh(date='2023-03-01', hour=10)
-
-
 
 
